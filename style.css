@@ -1,0 +1,47 @@
+body {
+            background-color: #1c1c1c;
+            color: #f0e68c;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            transition: background-image 0.5s ease-in-out;
+        }
+        h1, h2 {
+            color: white;
+        }
+        table {
+            width: 100%;
+            margin: 10px auto;
+            border-collapse: collapse;
+            background-color: #333;
+        }
+        th, td {
+          padding: 12px 20px;
+            border: 1px solid #555;
+            text-align: left;
+            color: whitesmoke;
+        }
+        th {
+            background-color: #444;
+        }
+        button {
+            background-color: #ff4500;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        button:hover {
+            background-color: #e63900;
+        } 
+        
+        /* Define a largura e a altura das imagens */
+img {
+    width: 100px; /* Defina a largura desejada */
+    height: 100px; /* Defina a altura desejada */
+    object-fit: cover; /* Faz com que a imagem preencha o espaço sem distorcer */
+    border-radius: 8px; /* (Opcional) Adiciona cantos arredondados às imagens */
+}
