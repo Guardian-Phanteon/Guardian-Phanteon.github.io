@@ -9,7 +9,7 @@ function sortTable(tableId) {
 function setRandomBackground() {
     const images = [
         'url("/17-BpalBQF.jpg")', 
-        'url("/castelo.jpg")', 
+        'url("senario/castelo.jpg")', 
         'url("/cenario.jpg")', 
         'url("/darkness.jpg")', 
         'url("/editPicTemp.jpg")', 
