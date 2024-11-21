@@ -221,7 +221,10 @@
         <source src="/audio/medieval_theme.mp3" type="audio/mpeg">
         Seu navegador não suporta o elemento de áudio.
     </audio>
-
+<audio id="diceSound">
+    <source src="/Som/RollingDice.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+</audio>
     <button onclick="rollDice(20)">Rolar D20</button>
     <button onclick="rollDice(12)">Rolar D12</button>
     <button onclick="rollDice(6)">Rolar D6</button>
@@ -245,6 +248,14 @@
                 return priceA - priceB;
             });
             rows.forEach(row => table.appendChild(row)); // Reorganiza as linhas na tabela
+        }
+        function rollDice(dice) {
+        const diceSound = document.getElementById("diceSound");
+        diceSound.currentTime = 0; // Reinicia o som, caso já esteja tocando
+        diceSound.play(); // Reproduz o som
+
+        const result = Math.floor(Math.random() * dice) + 1;
+        alert(`Você rolou um D${dice} e tirou: ${result}`);
         }
         </script
 </body>
